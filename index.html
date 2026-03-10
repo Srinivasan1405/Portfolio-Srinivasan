@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Portfolio</title>
+    <!-- Royal Theme Fonts: Playfair Display + Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .sidebar-nav.active .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 20px;
+            color: var(--text-muted);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            list-style: none;
+        }
+        .sidebar-nav.active .nav-item:hover,
+        .sidebar-nav.active .nav-item.active {
+            color: var(--primary-blue);
+            border-left: 3px solid var(--primary-blue);
+            background: rgba(0, 191, 255, 0.1);
+        }
+        .sidebar-nav.active ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar glass-panel">
+            <div class="profile-section">
+                <!-- Profile Image -->
+                <div class="profile-img-container" onclick="viewProfilePic()">
+                    <img src="img-.png" alt="Profile Picture">
+                </div>
+                <h2 class="profile-name">Srinivasan</h2>
+                <p class="profile-role">Full Stack Developer</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="nav-item active" data-target="hero">
+                        <i class="fas fa-home"></i> <span>Home</span>
+                    </li>
+                    <li class="nav-item" data-target="about">
+                        <i class="fas fa-user"></i> <span>About</span>
+                    </li>
+                    <li class="nav-item" data-target="education">
+                        <i class="fas fa-graduation-cap"></i> <span>Education</span>
+                    </li>
+                    <li class="nav-item" data-target="skills">
+                        <i class="fas fa-code"></i> <span>Skills</span>
+                    </li>
+                    <li class="nav-item" data-target="services">
+                        <i class="fas fa-cogs"></i> <span>Services</span>
+                    </li>
+                    <li class="nav-item" data-target="internships">
+                        <i class="fas fa-briefcase"></i> <span>Internships</span>
+                    </li>
+                    <li class="nav-item" data-target="projects">
+                        <i class="fas fa-folder-open"></i> <span>Projects</span>
+                    </li>
+                    <li class="nav-item" data-target="certifications">
+                        <i class="fas fa-certificate"></i> <span>Certifications</span>
+                    </li>
+                    <li class="nav-item" data-target="contact">
+                        <i class="fas fa-envelope"></i> <span>Contact</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>&copy; 2026 Srinivasan Portfolio</p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+
+            <!-- Mobile Toggle -->
+            <button id="menu-toggle" class="mobile-only"><i class="fas fa-bars"></i></button>
+
+            <!-- Sections -->
+            <section id="hero" class="content-section">
+                <div class="hero-content">
+                    <div class="hero-badge">Hi, Welcome</div>
+                    <h1>I'm Srinivasan</h1>
+                    <p class="tagline"><span id="typing-text"></span><span class="cursor">|</span></p>
+                    <p class="hero-desc">B.Tech Student | Building My Skills in Web Development</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">7</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Internships</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">16+</span>
+                            <span class="stat-label">Skills</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="cta-btn" onclick="document.querySelector('[data-target=\'projects\']').click()">My Projects</button>
+                        <button class="cta-btn-secondary" onclick="document.querySelector('[data-target=\'contact\']').click()">Contact</button>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/Srinivasan1405" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/srinivasan-t-a7a154356?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:iamseenu145@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/itzz__.18_/?__pwa=1" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="content-section">
+                <h2 class="section-heading">About Me</h2>
+                <div class="about-grid">
+                    <div class="card about-card">
+                        <div class="about-icon"><i class="fas fa-code"></i></div>
+                        <h3>Web Development</h3>
+                        <p style="color: #555;">I enjoy building websites and making them look good and work properly. I've worked with HTML, CSS, JavaScript and React to create different projects.</p>
+                    </div>
+                    <div class="card about-card">
+                        <div class="about-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Backend Work</h3>
+                        <p style="color: #555;">I'm learning to build the server-side of applications using Node.js, Express. Also learning databases like MySQL and MongoDB to store and manage data.</p>
+                    </div>
+                    <div class="card about-card">
+                        <div class="about-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3>Design Interest</h3>
+                        <p style="color: #555;">I like designing interfaces and trying to make them look nice. I use Figma and Canva for creating designs and mockups.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #333;">I'm currently pursuing my B.Tech in Computer Science & Business Systems. I'm a fresher who has completed a few projects during my studies and gained some internship experience. I'm looking for opportunities where I can learn and grow while contributing to real projects. I know the basics well and I'm always eager to learn new things.</p>
+                </div>
+            </section>
+
+            <section id="services" class="content-section">
+                <h2 class="section-heading">What I Can Do</h2>
+                <div class="services-grid">
+                    <div class="card service-card">
+                        <div class="service-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Web Development</h3>
+                        <p style="color: #555;">I can build websites and small web applications for you.</p>
+                    </div>
+                    <div class="card service-card">
+                        <div class="service-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend Development</h3>
+                        <p style="color: #555;">I can work on server-side code and create simple APIs.</p>
+                    </div>
+                    <div class="card service-card">
+                        <div class="service-icon"><i class="fas fa-database"></i></div>
+                        <h3>Database Work</h3>
+                        <p style="color: #555;">I can set up and work with MySQL and MongoDB databases.</p>
+                    </div>
+                    <div class="card service-card">
+                        <div class="service-icon"><i class="fas fa-mobile"></i></div>
+                        <h3>Responsive Sites</h3>
+                        <p style="color: #555;">I can make websites that work well on mobile and desktop.</p>
+                    </div>
+                    <div class="card service-card">
+                        <div class="service-icon"><i class="fas fa-pencil-alt"></i></div>
+                        <h3>Basic Design</h3>
+                        <p style="color: #555;">I can create simple UI designs and logos using design tools.</p>
+                    </div>
+                    <div class="card service-card">
+                        <div class="service-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <h3>Deployment</h3>
+                        <p style="color: #555;">I can deploy websites to Vercel and GitHub Pages.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="content-section">
+                <h2 class="section-heading">About Me</h2>
+                <div class="about-grid">
+                    <div class="card about-card">
+                        <div class="about-icon"><i class="fas fa-code"></i></div>
+                        <h3>Web Development</h3>
+                        <p style="color: #555;">Proficient in building responsive and interactive web applications using modern frontend and backend technologies.</p>
+                    </div>
+                    <div class="card about-card">
+                        <div class="about-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Full Stack Skills</h3>
+                        <p style="color: #555;">Skilled in end-to-end development with Node.js, Express, MySQL, and MongoDB for creating robust applications.</p>
+                    </div>
+                    <div class="card about-card">
+                        <div class="about-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3>UI/UX Design</h3>
+                        <p style="color: #555;">Passionate about creating intuitive and visually appealing user experiences with Figma and Canva.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #333;">I am a dedicated and enthusiastic <strong>Full Stack Developer</strong> with a strong foundation in web development technologies. Currently pursuing my <strong>B.Tech in Computer Science & Business Systems</strong>, I have completed multiple projects showcasing my abilities in both frontend and backend development. Through my internships at TechBeeshive and Cognifyz Technologies, I gained hands-on experience in building real-world applications. I am eager to contribute to innovative projects and continuously expand my skills in the dynamic field of software development.</p>
+                </div>
+            </section>
+
+            <section id="services" class="content-section">
+                <h2 class="section-heading">What I Offer</h2>
+                <div class="services-grid">
+                    <div class="card service-card">
+                        <div class="service-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Web Application Development</h3>
+                        <p style="color: #555;">Custom web applications built with modern frameworks and best practices for optimal performance.</p>
+                    </div>
+                    <div class="card service-card">
+                        <div class="service-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend Development</h3>
+                        <p style="color: #555;">Scalable server-side solutions with RESTful APIs, authentication, and database integration.</p>
+                    </div>
+                    <div class="card service-card">
+                        <div class="service-icon"><i class="fas fa-database"></i></div>
+                        <h3>Database Solutions</h3>
+                        <p style="color: #555;">Efficient database design and management using MySQL and MongoDB for data-driven applications.</p>
+                    </div>
+                    <div class="card service-card">
+                        <div class="service-icon"><i class="fas fa-mobile"></i></div>
+                        <h3>Responsive Design</h3>
+                        <p style="color: #555;">Mobile-first, responsive websites that provide seamless experience across all devices.</p>
+                    </div>
+                    <div class="card service-card">
+                        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Responsive Design</h3>
+                        <p style="color: #555;">Ensuring websites work perfectly on all devices and screen sizes.</p>
+                    </div>
+                    <div class="card service-card">
+                        <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>API Integration</h3>
+                        <p style="color: #555;">Connecting third-party APIs and implementing secure authentication.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="content-section">
+                <h2 class="section-heading">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="timeline-content">
+                            <h3>B.Tech - Computer Science & Business Systems</h3>
+                            <span class="institution">Engineering College</span>
+                            <span class="date">Currently Pursuing | CGPA: 8.0</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-school"></i></div>
+                        <div class="timeline-content">
+                            <h3>HSC (Higher Secondary)</h3>
+                            <span class="institution">Govt Model Hr Sec School</span>
+                            <span class="date">Completed | 58%</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-book"></i></div>
+                        <div class="timeline-content">
+                            <h3>SSLC (Secondary School)</h3>
+                            <span class="institution">Govt Model Hr Sec School</span>
+                            <span class="date">Completed | 66%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="content-section">
+                <h2 class="section-heading">Skills</h2>
+                <div class="skills-wrapper">
+                    <div class="skill-card">
+                        <h3><i class="fab fa-html5"></i> Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-with-logo"><i class="fab fa-html5"></i> HTML5</span><span class="skill-with-logo"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="skill-with-logo"><i class="fab fa-js"></i> JavaScript</span><span class="skill-with-logo"><i class="fab fa-react"></i> React</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="fas fa-server"></i> Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-with-logo"><i class="fab fa-node-js"></i> Node.js</span><span class="skill-with-logo"><i class="fas fa-code"></i> Express</span>
+                            <span class="skill-with-logo"><i class="fas fa-plug"></i> REST APIs</span><span class="skill-with-logo"><i class="fas fa-shield-alt"></i> JWT</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="fas fa-database"></i> Databases</h3>
+                        <div class="skill-tags">
+                            <span class="skill-with-logo"><i class="fas fa-database"></i> MySQL</span><span class="skill-with-logo"><i class="fas fa-leaf"></i> MongoDB</span>
+                            <span class="skill-with-logo"><i class="fas fa-sitemap"></i> Database Design</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="fas fa-tools"></i> Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-with-logo"><i class="fab fa-git-alt"></i> Git</span><span class="skill-with-logo"><i class="fab fa-github"></i> GitHub</span>
+                            <span class="skill-with-logo"><i class="fas fa-code"></i> VS Code</span><span class="skill-with-logo"><i class="fas fa-robot"></i> AI Tools</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="fas fa-cloud-upload-alt"></i> Deployment</h3>
+                        <div class="skill-tags">
+                            <span class="skill-with-logo"><i class="fas fa-sail"></i> Vercel</span><span class="skill-with-logo"><i class="fab fa-github"></i> GitHub Pages</span>
+                            <span class="skill-with-logo"><i class="fas fa-server"></i> Server</span><span class="skill-with-logo"><i class="fas fa-rocket"></i> Deployment</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="fas fa-palette"></i> Design</h3>
+                        <div class="skill-tags">
+                            <span class="skill-with-logo"><i class="fab fa-figma"></i> Figma</span><span class="skill-with-logo"><i class="fas fa-pen-nib"></i> Canva</span>
+                            <span class="skill-with-logo"><i class="fas fa-users"></i> UI/UX</span><span class="skill-with-logo"><i class="fas fa-mobile-alt"></i> Responsive</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="fas fa-coffee"></i> Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-with-logo"><i class="fab fa-js"></i> JavaScript</span><span class="skill-with-logo"><i class="fab fa-java"></i> Java</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="internships" class="content-section">
+                <h2 class="section-heading">My Internships</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                        <div class="timeline-content">
+                            <h3>Full Stack Developer</h3>
+                            <span class="institution">TechBeeshive</span>
+                            <span class="date">3 Months</span>
+                            <p style="color: #555; margin-top: 0.5rem;">Did my internship here for 3 months. Worked on some web projects and learned a lot about how real applications are built.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="timeline-content">
+                            <h3>Web Development</h3>
+                            <span class="institution">Cognifyz Technologies</span>
+                            <span class="date">Online</span>
+                            <p style="color: #555; margin-top: 0.5rem;">Completed an online internship program. Got to learn about web development and how things work in the industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="content-section">
+                <h2 class="section-heading">My Projects</h2>
+                <div class="projects-grid">
+                    <div class="card project-card">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=200&fit=crop" alt="Hospital Management" class="project-img">
+                        <div class="project-icon"><i class="fas fa-hospital"></i></div>
+                        <h3>Hospital Management System</h3>
+                        <p style="color: #555;">A simple system I built to manage patient details, appointments and billing for a hospital.</p>
+                        <div class="project-tags">
+                            <span>Node.js</span><span>Express</span><span>MySQL</span>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=200&fit=crop" alt="Student Management" class="project-img">
+                        <div class="project-icon"><i class="fas fa-user-graduate"></i></div>
+                        <h3>Student Management System</h3>
+                        <p style="color: #555;">This project helps manage student records, attendance and grades using CRUD operations.</p>
+                        <div class="project-tags">
+                            <span>Node.js</span><span>Express</span><span>MySQL</span>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=200&fit=crop" alt="Blood Emergency" class="project-img">
+                        <div class="project-icon"><i class="fas fa-tint"></i></div>
+                        <h3>Blood Emergency Website</h3>
+                        <p style="color: #555;">A website I made to help people find blood donors during emergencies quickly.</p>
+                        <div class="project-tags">
+                            <span>MongoDB</span><span>JWT</span><span>React</span>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=400&h=200&fit=crop" alt="E-Commerce" class="project-img">
+                        <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <h3>E-Commerce Website</h3>
+                        <p style="color: #555;">An online shopping website with cart feature, basic payment integration and admin panel.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>Node.js</span><span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop" alt="Portfolio" class="project-img">
+                        <div class="project-icon"><i class="fas fa-id-card"></i></div>
+                        <h3>Portfolio Website</h3>
+                        <p style="color: #555;">This is my personal portfolio website to showcase my skills and projects.</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=200&fit=crop" alt="AI Chatbot" class="project-img">
+                        <div class="project-icon"><i class="fas fa-robot"></i></div>
+                        <h3>AI Chatbot</h3>
+                        <p style="color: #555;">A basic chatbot that can answer simple questions and help with basic customer queries.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span><span>AI</span>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <img src="https://images.unsplash.com/photo-1533158326339-7f3cf2404354?w=400&h=200&fit=crop" alt="Numera" class="project-img">
+                        <div class="project-icon"><i class="fas fa-calculator"></i></div>
+                        <h3>Numera</h3>
+                        <p style="color: #555;">A calculator app I built with basic and advanced math functions and a clean UI.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span><span>HTML</span><span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certifications" class="content-section">
+                <h2 class="section-heading">My Certifications</h2>
+                <div class="certifications-grid">
+                    <div class="card cert-card">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <h3>Full Stack Development</h3>
+                        <p style="color: #555;">TechBeeshive</p>
+                    </div>
+                    <div class="card cert-card">
+                        <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Web Development</h3>
+                        <p style="color: #555;">Cognifyz Technologies</p>
+                    </div>
+                    <div class="card cert-card">
+                        <div class="cert-icon"><i class="fas fa-award"></i></div>
+                        <h3>UI/UX Design</h3>
+                        <p style="color: #555;">Online Course</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="content-section">
+                <h2 class="section-heading">Contact Me</h2>
+                <div class="contact-grid">
+                    <div class="card contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email</h3>
+                        <p style="color: #555;">iamseenu145@gmail.com</p>
+                    </div>
+                    <div class="card contact-card">
+                        <div class="contact-icon"><i class="fas fa-briefcase"></i></div>
+                        <h3>Status</h3>
+                        <p style="color: #555;">Looking for Job</p>
+                    </div>
+                    <div class="card contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>Location</h3>
+                        <p style="color: #555;">Tamil Nadu, India</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 style="margin-bottom: 1rem;">Send a Message</h3>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" class="form-input">
+                        <input type="email" placeholder="Your Email" class="form-input">
+                        <textarea placeholder="Your Message" class="form-input" rows="4"></textarea>
+                        <button type="submit" class="cta-btn">Send</button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Profile Lightbox -->
+    <div id="profile-lightbox" class="lightbox" onclick="closeProfilePic()">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="profile-lightbox-img" src="img-.png" alt="Profile Picture">
+        <div id="caption">Click anywhere to close</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
