@@ -975,6 +975,26 @@ body {
     transition: all 0.3s ease;
 }
 
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 1rem;
+    padding: 8px 18px;
+    background: rgba(0, 191, 255, 0.1);
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: var(--primary-blue);
+    color: #fff;
+}
+
 .project-card:hover {
     transform: translateY(-10px);
     border-color: var(--primary-blue);
