@@ -14,14 +14,22 @@
 }
 
 [data-theme="dark"] {
-    --bg-dark: #0a0a1a;
-    --bg-panel: rgba(15, 15, 35, 0.85);
-    --primary-blue: #00d4ff;
-    --secondary-blue: #0088b3;
-    --text-main: #e0e0ff;
-    --text-muted: #8888aa;
-    --glass-border: rgba(0, 212, 255, 0.2);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    --bg-dark: #000000;
+    --bg-panel: rgba(10, 10, 10, 0.92);
+    --primary-blue: #00e5ff;
+    --secondary-blue: #0099cc;
+    --text-main: #e0e0e0;
+    --text-muted: #666666;
+    --glass-border: rgba(0, 229, 255, 0.10);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+}
+
+[data-theme="dark"] body {
+    background-image: none;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+    background: #000;
 }
 
 * {
@@ -897,8 +905,9 @@ body {
 }
 
 [data-theme="dark"] .social-icon {
-    background: rgba(30, 30, 60, 0.9);
-    border-color: rgba(0, 212, 255, 0.25);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(0, 229, 255, 0.15);
+    color: #aaa;
 }
 
 .cursor {
@@ -1181,12 +1190,17 @@ textarea.form-input {
 
 /* Dark theme overrides */
 [data-theme="dark"] .form-input {
-    background: rgba(20, 20, 50, 0.9);
+    background: rgba(255, 255, 255, 0.04);
     color: var(--text-main);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] .form-input:focus {
+    border-color: var(--primary-blue);
 }
 
 [data-theme="dark"] .sidebar {
-    background: rgba(15, 15, 35, 0.95);
+    background: rgba(0, 0, 0, 0.95);
 }
 
 [data-theme="dark"] .card,
@@ -1194,11 +1208,53 @@ textarea.form-input {
 [data-theme="dark"] .skill-card,
 [data-theme="dark"] .award-card,
 [data-theme="dark"] .lang-item {
-    background: rgba(15, 15, 35, 0.8);
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.06);
 }
 
-[data-theme="dark"] .skill-tags span i.fa-github { color: #888; }
+[data-theme="dark"] .card:hover,
+[data-theme="dark"] .timeline-item:hover,
+[data-theme="dark"] .skill-card:hover {
+    border-color: var(--glass-border);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .hero-badge {
+    background: rgba(0, 229, 255, 0.08);
+    border-color: rgba(0, 229, 255, 0.2);
+}
+
+[data-theme="dark"] .nav-item::before {
+    background: linear-gradient(90deg, rgba(0, 229, 255, 0.08), transparent);
+}
+
+[data-theme="dark"] .project-tags span {
+    background: rgba(0, 229, 255, 0.1);
+    color: var(--primary-blue);
+}
+
+[data-theme="dark"] .project-link {
+    background: rgba(0, 229, 255, 0.06);
+}
+
+[data-theme="dark"] .timeline-icon {
+    background: rgba(0, 229, 255, 0.08);
+}
+
+[data-theme="dark"] .profile-img-container {
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.15);
+}
+
+[data-theme="dark"] .skill-tags span i.fa-github { color: #aaa; }
 [data-theme="dark"] .skill-tags span i.fa-js { color: #f7df1e; }
+[data-theme="dark"] .skill-tags span i.fa-java { color: #5382a1; }
+[data-theme="dark"] .skill-tags span i.fa-node-js { color: #68a063; }
+[data-theme="dark"] .skill-tags span i.fa-react { color: #61dafb; }
+[data-theme="dark"] .skill-tags span i.fa-html5 { color: #e34f26; }
+[data-theme="dark"] .skill-tags span i.fa-css3-alt { color: #1572b6; }
+[data-theme="dark"] .skill-tags span i.fa-git-alt { color: #f05032; }
+[data-theme="dark"] .skill-tags span i.fa-figma { color: #f24e1e; }
+[data-theme="dark"] .skill-tags span i.fa-leaf { color: #47a248; }
 
 /* Theme toggle button */
 .theme-toggle {
@@ -1230,14 +1286,15 @@ textarea.form-input {
 }
 
 [data-theme="dark"] .theme-toggle {
-    background: rgba(15, 15, 35, 0.9);
-    color: #f0c040;
-    border-color: rgba(240, 192, 64, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+    color: #00e5ff;
+    border-color: rgba(0, 229, 255, 0.2);
 }
 
 [data-theme="dark"] .theme-toggle:hover {
-    background: #f0c040;
-    color: #1a1a2e;
+    background: #00e5ff;
+    color: #000;
+    transform: rotate(30deg) scale(1.1);
 }
 
 /* Scroll Animation */
@@ -1321,13 +1378,14 @@ textarea.form-input {
 }
 
 [data-theme="dark"] .filter-btn {
-    background: rgba(15, 15, 35, 0.8);
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 [data-theme="dark"] .filter-btn:hover,
 [data-theme="dark"] .filter-btn.active {
     background: var(--primary-blue);
-    color: #fff;
+    color: #000;
 }
 
 /* Resume download button same style as cta-btn-secondary */

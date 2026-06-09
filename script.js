@@ -220,17 +220,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Resume download
-async function openResume() {
-  try {
-    const res = await fetch('/resume.docx', { method: 'HEAD' });
-    if (res.ok) {
-      window.open('/resume.docx', '_blank');
-    } else {
-      alert('Resume not found. Please add resume.docx to the project folder.');
-    }
-  } catch {
-    alert('Resume not found. Please add resume.docx to the project folder.');
-  }
+function openResume() {
+  const a = document.createElement('a');
+  a.href = '/resume';
+  a.download = 'Srinivasan_Resume.docx';
+  a.style.display = 'none';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
 }
 
 // Profile Lightbox Functions

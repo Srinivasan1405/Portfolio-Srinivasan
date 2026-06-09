@@ -27,6 +27,11 @@ app.get('/admin', (req, res) => {
   res.sendFile(path.join(__dirname, 'admin.html'));
 });
 
+app.get('/resume', (req, res) => {
+  const filePath = path.join(__dirname, 'resume.docx');
+  res.download(filePath, 'Srinivasan_Resume.docx');
+});
+
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     console.log('Connected to MongoDB');
