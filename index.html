@@ -4,7 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Portfolio</title>
+    <title>Srinivasan T | Full Stack Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Srinivasan T — Full Stack Developer skilled in React, Node.js, Express, MySQL and MongoDB. View my projects, internships, certifications and resume.">
+    <meta name="author" content="Srinivasan T">
+    <meta name="theme-color" content="#00bfff">
+    <link rel="canonical" href="https://portfolio-srinivasan-mu.vercel.app/">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Srinivasan T | Full Stack Developer Portfolio">
+    <meta property="og:description" content="Full Stack Developer skilled in React, Node.js, Express, MySQL and MongoDB. View my projects, internships and resume.">
+    <meta property="og:url" content="https://portfolio-srinivasan-mu.vercel.app/">
+    <meta property="og:image" content="https://portfolio-srinivasan-mu.vercel.app/img-.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Srinivasan T | Full Stack Developer Portfolio">
+    <meta name="twitter:description" content="Full Stack Developer skilled in React, Node.js, Express, MySQL and MongoDB.">
+    <meta name="twitter:image" content="https://portfolio-srinivasan-mu.vercel.app/img-.png">
     <!-- Royal Theme Fonts: Playfair Display + Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +64,7 @@
         <aside class="sidebar glass-panel">
             <div class="profile-section">
                 <!-- Profile Image -->
-                <div class="profile-img-container" onclick="viewProfilePic()">
+                <div class="profile-img-container" onclick="viewProfilePic()" role="button" tabindex="0" aria-label="View profile picture">
                     <img src="img-.png" alt="Profile Picture">
                 </div>
                 <h2 class="profile-name">Srinivasan</h2>
@@ -97,7 +112,7 @@
         <main class="main-content">
 
             <!-- Mobile Toggle -->
-            <button id="menu-toggle" class="mobile-only"><i class="fas fa-bars"></i></button>
+            <button id="menu-toggle" class="mobile-only" aria-label="Toggle navigation menu" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
 
             <!-- Sections -->
             <section id="hero" class="content-section">
@@ -126,10 +141,10 @@
                         <button class="resume-btn" onclick="openResume()"><i class="fas fa-download"></i> Resume</button>
                     </div>
                     <div class="hero-social">
-                        <a href="https://github.com/Srinivasan1405" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/srinivasan-t-a7a154356" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:srinivasant411@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
-                        <a href="https://www.instagram.com/itzz__.18_/?__pwa=1" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Srinivasan1405" class="social-icon" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/srinivasan-t-a7a154356" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="mailto:srinivasant411@gmail.com" class="social-icon" aria-label="Email Srinivasan"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/itzz__.18_/?__pwa=1" class="social-icon" aria-label="Instagram profile"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </section>
@@ -140,21 +155,21 @@
                     <div class="card about-card animate-on-scroll">
                         <div class="about-icon"><i class="fas fa-code"></i></div>
                         <h3>Web Development</h3>
-                        <p style="color: #555;">I enjoy building websites and making them look good and work properly. I've worked with HTML, CSS, JavaScript and React to create different projects.</p>
+                        <p style="color: var(--text-muted);">I enjoy building websites and making them look good and work properly. I've worked with HTML, CSS, JavaScript and React to create different projects.</p>
                     </div>
                     <div class="card about-card animate-on-scroll">
                         <div class="about-icon"><i class="fas fa-layer-group"></i></div>
                         <h3>Backend Work</h3>
-                        <p style="color: #555;">I'm learning to build the server-side of applications using Node.js, Express. Also learning databases like MySQL and MongoDB to store and manage data.</p>
+                        <p style="color: var(--text-muted);">I'm learning to build the server-side of applications using Node.js, Express. Also learning databases like MySQL and MongoDB to store and manage data.</p>
                     </div>
                     <div class="card about-card animate-on-scroll">
                         <div class="about-icon"><i class="fas fa-paint-brush"></i></div>
                         <h3>Design Interest</h3>
-                        <p style="color: #555;">I like designing interfaces and trying to make them look nice. I use Figma and Canva for creating designs and mockups.</p>
+                        <p style="color: var(--text-muted);">I like designing interfaces and trying to make them look nice. I use Figma and Canva for creating designs and mockups.</p>
                     </div>
                 </div>
                 <div class="card animate-on-scroll">
-                    <p style="font-size: 1.1rem; line-height: 1.8; color: #333;">Enthusiastic and detail-oriented fresher in Full Stack Development with strong skills in HTML, CSS, JavaScript, basics on Node.js, and database management. Eager to apply academic knowledge and project experience to build dynamic, user-friendly web applications. Known for quick learning, problem-solving, and a collaborative approach to achieving project goals.</p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-muted);">Enthusiastic and detail-oriented fresher in Full Stack Development with strong skills in HTML, CSS, JavaScript, basics on Node.js, and database management. Eager to apply academic knowledge and project experience to build dynamic, user-friendly web applications. Known for quick learning, problem-solving, and a collaborative approach to achieving project goals.</p>
                 </div>
             </section>
 
@@ -164,32 +179,32 @@
                     <div class="card service-card animate-on-scroll">
                         <div class="service-icon"><i class="fas fa-globe"></i></div>
                         <h3>Web Development</h3>
-                        <p style="color: #555;">I can build websites and small web applications for you.</p>
+                        <p style="color: var(--text-muted);">I can build websites and small web applications for you.</p>
                     </div>
                     <div class="card service-card animate-on-scroll">
                         <div class="service-icon"><i class="fas fa-server"></i></div>
                         <h3>Backend Development</h3>
-                        <p style="color: #555;">I can work on server-side code and create simple APIs.</p>
+                        <p style="color: var(--text-muted);">I can work on server-side code and create simple APIs.</p>
                     </div>
                     <div class="card service-card animate-on-scroll">
                         <div class="service-icon"><i class="fas fa-database"></i></div>
                         <h3>Database Work</h3>
-                        <p style="color: #555;">I can set up and work with MySQL and MongoDB databases.</p>
+                        <p style="color: var(--text-muted);">I can set up and work with MySQL and MongoDB databases.</p>
                     </div>
                     <div class="card service-card animate-on-scroll">
                         <div class="service-icon"><i class="fas fa-mobile"></i></div>
                         <h3>Responsive Sites</h3>
-                        <p style="color: #555;">I can make websites that work well on mobile and desktop.</p>
+                        <p style="color: var(--text-muted);">I can make websites that work well on mobile and desktop.</p>
                     </div>
                     <div class="card service-card animate-on-scroll">
                         <div class="service-icon"><i class="fas fa-pencil-alt"></i></div>
                         <h3>Basic Design</h3>
-                        <p style="color: #555;">I can create simple UI designs and logos using design tools.</p>
+                        <p style="color: var(--text-muted);">I can create simple UI designs and logos using design tools.</p>
                     </div>
                     <div class="card service-card animate-on-scroll">
                         <div class="service-icon"><i class="fas fa-cloud-upload-alt"></i></div>
                         <h3>Deployment</h3>
-                        <p style="color: #555;">I can deploy websites to Vercel and GitHub Pages.</p>
+                        <p style="color: var(--text-muted);">I can deploy websites to Vercel and GitHub Pages.</p>
                     </div>
                 </div>
             </section>
@@ -247,15 +262,13 @@
                         <h3><i class="fas fa-database"></i> Databases</h3>
                         <div class="skill-tags">
                             <span class="skill-with-logo"><i class="fas fa-database"></i> MySQL</span><span class="skill-with-logo"><i class="fas fa-leaf"></i> MongoDB</span>
-                            <span class="skill-with-logo"><i class="fas fa-leaf"></i> Mongoose</span><span class="skill-with-logo"><i class="fas fa-sitemap"></i> Database Design</span>
-                        </div>
+                            <span class="skill-with-logo"><i class="fas fa-leaf"></i> Mongoose</span></div>
                     </div>
                     <div class="skill-card">
                         <h3><i class="fas fa-cloud-upload-alt"></i> API & Deployment</h3>
                         <div class="skill-tags">
                             <span class="skill-with-logo"><i class="fas fa-paper-plane"></i> Postman</span><span class="skill-with-logo"><i class="fas fa-sail"></i> Vercel</span>
-                            <span class="skill-with-logo"><i class="fab fa-github"></i> GitHub Pages</span><span class="skill-with-logo"><i class="fas fa-rocket"></i> Deployment</span>
-                        </div>
+                            <span class="skill-with-logo"><i class="fab fa-github"></i> GitHub Pages</span></div>
                     </div>
                     <div class="skill-card">
                         <h3><i class="fas fa-tools"></i> Development Tools</h3>
@@ -299,7 +312,7 @@
                             <h3>Full Stack Developer</h3>
                             <span class="institution">Techbeeshive</span>
                             <span class="date">12/2025 - 03/2026 | Krishnagiri</span>
-                            <p style="color: #555; margin-top: 0.5rem;">Developed and optimized full-stack web applications, working on responsive user interfaces and backend services while integrating APIs and database functionality. Contributed to application deployment and collaborated with team members following Agile development workflows.</p>
+                            <p style="color: var(--text-muted); margin-top: 0.5rem;">Developed and optimized full-stack web applications, working on responsive user interfaces and backend services while integrating APIs and database functionality. Contributed to application deployment and collaborated with team members following Agile development workflows.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -308,7 +321,7 @@
                             <h3>Hardware & Software Intern</h3>
                             <span class="institution">Popular System</span>
                             <span class="date">06/2025 - 07/2025 | Coimbatore</span>
-                            <p style="color: #555; margin-top: 0.5rem;">Gained experience and knowledge on both hardware and software automation during this internship.</p>
+                            <p style="color: var(--text-muted); margin-top: 0.5rem;">Gained experience and knowledge on both hardware and software automation during this internship.</p>
                         </div>
                     </div>
                 </div>
@@ -326,75 +339,75 @@
                 </div>
                 <div class="projects-grid">
                     <div class="card project-card animate-on-scroll" data-tech="Node.js Express MySQL">
-                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=200&fit=crop" alt="Hospital Management" class="project-img">
+                        <img src="project-imgs/hospital.png" alt="Hospital Management System live screenshot" class="project-img" loading="lazy" width="800" height="333">
                         <div class="project-icon"><i class="fas fa-hospital"></i></div>
                         <h3>Hospital Management System</h3>
-                        <p style="color: #555;">A simple system I built to manage patient details, appointments and billing for a hospital.</p>
+                        <p style="color: var(--text-muted);">A simple system I built to manage patient details, appointments and billing for a hospital.</p>
                         <div class="project-tags">
                             <span>Node.js</span><span>Express</span><span>MySQL</span>
                         </div>
                         <a href="https://hospital-management-nu-virid.vercel.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                     </div>
                     <div class="card project-card animate-on-scroll" data-tech="React Node.js Express MySQL">
-                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=200&fit=crop" alt="Student Management" class="project-img">
+                        <img src="project-imgs/student.svg" alt="Student Management System illustration" class="project-img" loading="lazy" width="800" height="333">
                         <div class="project-icon"><i class="fas fa-user-graduate"></i></div>
                         <h3>Student Management System</h3>
-                        <p style="color: #555;">Developed a full-stack Student Management System with CRUD operations, RESTful APIs, and secure authentication for efficient data management.</p>
+                        <p style="color: var(--text-muted);">Developed a full-stack Student Management System with CRUD operations, RESTful APIs, and secure authentication for efficient data management.</p>
                         <div class="project-tags">
                             <span>React</span><span>Node.js</span><span>Express</span><span>MySQL</span>
                         </div>
                     </div>
                     <div class="card project-card animate-on-scroll" data-tech="MongoDB React JWT">
-                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=200&fit=crop" alt="Blood Emergency" class="project-img">
+                        <img src="project-imgs/blood.png" alt="Blood Emergency Website live screenshot" class="project-img" loading="lazy" width="800" height="333">
                         <div class="project-icon"><i class="fas fa-tint"></i></div>
                         <h3>Blood Emergency Website</h3>
-                        <p style="color: #555;">A website I made to help people find blood donors during emergencies quickly.</p>
+                        <p style="color: var(--text-muted);">A website I made to help people find blood donors during emergencies quickly.</p>
                         <div class="project-tags">
                             <span>MongoDB</span><span>JWT</span><span>React</span>
                         </div>
                         <a href="https://blood-emergency-beige.vercel.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                     </div>
                     <div class="card project-card animate-on-scroll" data-tech="React Node.js MongoDB MERN">
-                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=400&h=200&fit=crop" alt="E-Commerce" class="project-img">
+                        <img src="project-imgs/ecommerce.svg" alt="E-Commerce Website illustration" class="project-img" loading="lazy" width="800" height="333">
                         <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
                         <h3>E-Commerce Website</h3>
-                        <p style="color: #555;">An online shopping website with cart feature, basic payment integration and admin panel.</p>
+                        <p style="color: var(--text-muted);">An online shopping website with cart feature, basic payment integration and admin panel.</p>
                         <div class="project-tags">
                             <span>React</span><span>Node.js</span><span>MongoDB</span>
                         </div>
                     </div>
                     <div class="card project-card animate-on-scroll" data-tech="HTML CSS JavaScript">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop" alt="Portfolio" class="project-img">
+                        <img src="project-imgs/portfolio.png" alt="Portfolio Website live screenshot" class="project-img" loading="lazy" width="800" height="333">
                         <div class="project-icon"><i class="fas fa-id-card"></i></div>
                         <h3>Portfolio Website</h3>
-                        <p style="color: #555;">This is my personal portfolio website to showcase my skills and projects.</p>
+                        <p style="color: var(--text-muted);">This is my personal portfolio website to showcase my skills and projects.</p>
                         <div class="project-tags">
                             <span>HTML</span><span>CSS</span><span>JavaScript</span>
                         </div>
                     </div>
                     <div class="card project-card animate-on-scroll" data-tech="JavaScript">
-                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=200&fit=crop" alt="AI Chatbot" class="project-img">
+                        <img src="project-imgs/numera-ai.svg" alt="NUMERA-AI illustration" class="project-img" loading="lazy" width="800" height="333">
                         <div class="project-icon"><i class="fas fa-robot"></i></div>
                         <h3>NUMERA-AI</h3>
-                        <p style="color: #555;">AI-powered mathematics learning platform providing structured, step-by-step problem-solving guidance with intelligent, context-aware responses generated via LLM APIs.</p>
+                        <p style="color: var(--text-muted);">AI-powered mathematics learning platform providing structured, step-by-step problem-solving guidance with intelligent, context-aware responses generated via LLM APIs.</p>
                         <div class="project-tags">
                             <span>React</span><span>Node.js</span><span>Express</span><span>LLM APIs</span>
                         </div>
                     </div>
                     <div class="card project-card animate-on-scroll" data-tech="React Node.js Express MongoDB JWT MERN">
-                        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=400&h=200&fit=crop" alt="RoutineRise" class="project-img">
+                        <img src="project-imgs/routinerise.svg" alt="RoutineRise illustration" class="project-img" loading="lazy" width="800" height="333">
                         <div class="project-icon"><i class="fas fa-chart-line"></i></div>
                         <h3>RoutineRise</h3>
-                        <p style="color: #555;">Full stack routine and productivity tracker with JWT authentication, goal and streak tracking, calendar planning, and interactive performance analytics powered by Recharts.</p>
+                        <p style="color: var(--text-muted);">Full stack routine and productivity tracker with JWT authentication, goal and streak tracking, calendar planning, and interactive performance analytics powered by Recharts.</p>
                         <div class="project-tags">
                             <span>React</span><span>Tailwind</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span><span>Recharts</span>
                         </div>
                     </div>
                     <div class="card project-card animate-on-scroll" data-tech="HTML CSS JavaScript">
-                        <img src="https://images.unsplash.com/photo-1533158326339-7f3cf2404354?w=400&h=200&fit=crop" alt="Numera" class="project-img">
+                        <img src="project-imgs/numera-calc.svg" alt="Numera Calculator illustration" class="project-img" loading="lazy" width="800" height="333">
                         <div class="project-icon"><i class="fas fa-calculator"></i></div>
                         <h3>Numera</h3>
-                        <p style="color: #555;">A calculator app I built with basic and advanced math functions and a clean UI.</p>
+                        <p style="color: var(--text-muted);">A calculator app I built with basic and advanced math functions and a clean UI.</p>
                         <div class="project-tags">
                             <span>JavaScript</span><span>HTML</span><span>CSS</span>
                         </div>
@@ -408,17 +421,17 @@
                     <div class="card cert-card">
                         <div class="cert-icon"><i class="fas fa-file-alt"></i></div>
                         <h3>Paper Presentation - ICCII 2026</h3>
-                        <p style="color: #555;">NUMERA: AI-Powered Mathematical Reasoning and Visualization Engine with External Knowledge | Velammal Institute of Technology, Chennai</p>
+                        <p style="color: var(--text-muted);">NUMERA: AI-Powered Mathematical Reasoning and Visualization Engine with External Knowledge | Velammal Institute of Technology, Chennai</p>
                     </div>
                     <div class="card cert-card">
                         <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
                         <h3>Certificate of Participation</h3>
-                        <p style="color: #555;">Bridging Innovations in Computer Science and Business Systems | Er. Perumal Manimekalai College of Engineering, Hosur - April 2025</p>
+                        <p style="color: var(--text-muted);">Bridging Innovations in Computer Science and Business Systems | Er. Perumal Manimekalai College of Engineering, Hosur - April 2025</p>
                     </div>
                     <div class="card cert-card">
                         <div class="cert-icon"><i class="fas fa-award"></i></div>
                         <h3>Full Stack Web Development</h3>
-                        <p style="color: #555;">Techbeeshiva</p>
+                        <p style="color: var(--text-muted);">Techbeeshiva</p>
                     </div>
                 </div>
             </section>
@@ -429,40 +442,40 @@
                     <div class="card contact-card">
                         <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                         <h3>Email</h3>
-                        <p style="color: #555;">srinivasant411@gmail.com</p>
+                        <p style="color: var(--text-muted);">srinivasant411@gmail.com</p>
                     </div>
                     <div class="card contact-card">
                         <div class="contact-icon"><i class="fas fa-briefcase"></i></div>
                         <h3>Status</h3>
-                        <p style="color: #555;">Looking for Job</p>
+                        <p style="color: var(--text-muted);">Looking for Job</p>
                     </div>
                     <div class="card contact-card">
                         <div class="contact-icon"><i class="fas fa-phone"></i></div>
                         <h3>Phone</h3>
-                        <p style="color: #555;">+91 6379040872</p>
+                        <p style="color: var(--text-muted);">+91 6379040872</p>
                     </div>
                     <div class="card contact-card">
                         <div class="contact-icon"><i class="fas fa-language"></i></div>
                         <h3>Languages</h3>
-                        <p style="color: #555;">Tamil, English, Telugu</p>
+                        <p style="color: var(--text-muted);">Tamil, English, Telugu</p>
                     </div>
                     <div class="card contact-card">
                         <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <h3>Location</h3>
-                        <p style="color: #555;">Krishnagiri, TN</p>
+                        <p style="color: var(--text-muted);">Krishnagiri, TN</p>
                     </div>
                     <div class="card contact-card">
                         <div class="contact-icon"><i class="fas fa-globe"></i></div>
                         <h3>Portfolio</h3>
-                        <p style="color: #555; word-break: break-all;">portfolio-srinivasan-mu.vercel.app</p>
+                        <p style="color: var(--text-muted); word-break: break-all;">portfolio-srinivasan-mu.vercel.app</p>
                     </div>
                 </div>
                 <div class="card">
                     <h3 style="margin-bottom: 1rem;">Send a Message</h3>
                     <form class="contact-form" id="contact-form">
-                        <input type="text" id="form-name" placeholder="Your Name" class="form-input" required>
-                        <input type="email" id="form-email" placeholder="Your Email" class="form-input" required>
-                        <textarea id="form-message" placeholder="Your Message" class="form-input" rows="4" required></textarea>
+                        <input type="text" id="form-name" placeholder="Your Name" class="form-input" aria-label="Your name" required>
+                        <input type="email" id="form-email" placeholder="Your Email" class="form-input" aria-label="Your email" required>
+                        <textarea id="form-message" placeholder="Your Message" class="form-input" rows="4" aria-label="Your message" required></textarea>
                         <button type="submit" class="cta-btn" id="form-submit-btn">Send</button>
                     </form>
                     <div id="form-feedback" style="margin-top: 1rem; font-weight: 500; display: none;"></div>
@@ -473,16 +486,16 @@
     </div>
 
     <!-- Profile Lightbox -->
-    <div id="profile-lightbox" class="lightbox" onclick="closeProfilePic()">
-        <span class="lightbox-close">&times;</span>
+    <div id="profile-lightbox" class="lightbox" onclick="closeProfilePic()" role="dialog" aria-modal="true" aria-label="Profile picture preview">
+        <span class="lightbox-close" role="button" tabindex="0" aria-label="Close preview">&times;</span>
         <img class="lightbox-content" id="profile-lightbox-img" src="img-.png" alt="Profile Picture">
         <div id="caption">Click anywhere to close</div>
     </div>
 
-    <button class="back-to-top" id="back-to-top" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <button class="back-to-top" id="back-to-top" title="Back to top" aria-label="Scroll back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
 
-    <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
-        <i class="fas fa-moon"></i>
+    <button class="theme-toggle" id="theme-toggle" title="Toggle theme" aria-label="Toggle dark and light theme">
+        <i class="fas fa-moon" aria-hidden="true"></i>
     </button>
 
     <script src="script.js"></script>

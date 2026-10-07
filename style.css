@@ -19,7 +19,7 @@
     --primary-blue: #00e5ff;
     --secondary-blue: #0099cc;
     --text-main: #e0e0e0;
-    --text-muted: #666666;
+    --text-muted: #a3a3a3;
     --glass-border: rgba(0, 229, 255, 0.10);
     --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
 }
@@ -1435,4 +1435,10 @@ textarea.form-input {
         padding: 14px 30px;
         font-size: 0.9rem;
     }
+}
+
+/* Keyboard focus visibility */
+a:focus-visible, button:focus-visible, [role="button"]:focus-visible, .nav-item:focus-visible {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 3px;
 }
