@@ -28,8 +28,8 @@ app.get('/admin', (req, res) => {
 });
 
 app.get('/resume', (req, res) => {
-  const filePath = path.join(__dirname, 'resume.docx');
-  res.download(filePath, 'Srinivasan_Resume.docx');
+  const filePath = path.join(__dirname, 'Resume_Srinivasan_T.pdf');
+  res.download(filePath, 'Srinivasan_T_Resume.pdf');
 });
 
 mongoose.connect(process.env.MONGODB_URI)

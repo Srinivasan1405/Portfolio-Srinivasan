@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function openResume() {
   const a = document.createElement('a');
   a.href = '/resume';
-  a.download = 'Srinivasan_Resume.docx';
+  a.download = 'Srinivasan_T_Resume.pdf';
   a.style.display = 'none';
   document.body.appendChild(a);
   a.click();
